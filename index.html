@@ -1,0 +1,390 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <title>Строитель</title>
+    <meta name="Description" content="Концепт бюджетного сайта по строительству. Верстка сделана Федором Алексеевым.">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=1920">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="roboto.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container header-top-container">
+          <a href="" class="header__logo">строитель</a>
+          <div class="header__right">
+            <div class="header__location">г. Санкт-Петербург</div>
+            <a href="" class="header__phone">+7 123 456 78 90</a>
+            <div class="button header__button" onclick="ordercall()">Заказать звонок</div>
+          </div>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <div class="container header-nav__container">
+          <a href="#service" class="header-nav__item">главная</a>
+          <a href="#build" class="header-nav__item">строительство</a>
+          <a href="#renovation" class="header-nav__item">ремонт</a>
+          <a href="#other" class="header-nav__item">другие услуги</a>
+          <a href="#footer" class="header-nav__item">контакты</a>
+        </div>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <a name="service"></a>
+      <div class="service">
+        <div class="block service__block">
+          <div class="container service__container">
+            <div class="service__title">
+              <div class="service__title-text">
+                <h1>многопрофильная компания</h1>
+                <p>по строительству и ремонту</p>
+              </div>
+            </div>
+            <div class="service__subtitle"><div class="service__subtitle-text">Выберите свою услугу</div></div>
+            <div class="service__cards">
+              <a href="#build" class="service__card service__card-house">
+                <div class="service__card-top">Строительство</div>
+                <div class="service__card-bottom">Коттеджей, Бань, Беседок</div>
+                <div class="service__card-more">Подробнее</div>
+              </a>
+              <a href="#renovation" class="service__card service__card-renovation">
+                <div class="service__card-top">Ремонт</div>
+                <div class="service__card-bottom">Квартир, Офисов, Магазинов</div>
+                <div class="service__card-more">Подробнее</div>
+              </a>
+              <a href="#other" class="service__card service__card-other">
+                <div class="service__card-top">Другие услуги</div>
+                <div class="service__card-bottom">Заборы и ограждения, Отопление и водоснабжение, Ландшафтные работы, Проектирование и дизайн</div>
+                <div class="service__card-more">Подробнее</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="build"></a>
+      <div class="build">
+        <div class="block build__block">
+          <div class="content-block">
+            <div class="block content-block__wrapper">
+              <div class="container content-block__container">
+                <div class="content-block__title">Строительство коттеджей, бань и беседок</div>
+                <div class="info">
+                  <div class="info__content">
+                    <ul class="info__list">
+                      <li class="info__list-item">Срок службы домов более 100 лет</li>
+                      <li class="info__list-item">Бесплатный выезд специалиста</li>
+                      <li class="info__list-item">Подробная смета</li>
+                      <li class="info__list-item">Фиксированная стоимость работ</li>
+                      <li class="info__list-item">Бесплатный строительный проект</li>
+                      <li class="info__list-item">Специалисты с опытом от 10 лет</li>
+                      <li class="info__list-item">Качественные материалы</li>
+                    </ul>
+                    <div class="info__subtitle">Примеры работ</div>
+                    <div class="info__cards">
+                      <div class="slider-card info__card">
+                        <div class="slider-card__top slider-card__top_house">Коттеджи</div>
+                        <div class="slider-card__photo info__card-photo slider-card__photo_house-1" onclick="zoom_card(this)"><div class="slider-card__photo-mask"></div></div>
+                        <div class="slider-card__bottom">
+                          <div class="slider-card__bottom-left"><div class="slider-card__arrow slider-card__arrow_left slider-card__arrow_house" onclick="card_slider(this)"></div></div>
+                          <div class="slider-card__bottom-center">
+                            <div class="slider-card__bottom-title slider-card__bottom-title_house slider-card__bottom-title_1">Коттедж </div>
+                            <div class="slider-card__bottom-meter slider-card__bottom-meter_house-1"> <span class="slider-card__bottom-price slider-card__bottom-price_house-1"></span></div>
+                          </div>
+                          <div class="slider-card__bottom-right"><div class="slider-card__arrow slider-card__arrow_right slider-card__arrow_house" onclick="card_slider(this)"></div></div>
+                        </div>
+                      </div>
+                      <div class="slider-card info__card">
+                        <div class="slider-card__top slider-card__top_bath">Бани</div>
+                        <div class="slider-card__photo info__card-photo slider-card__photo_bath-1" onclick="zoom_card(this)"><div class="slider-card__photo-mask"></div></div>
+                        <div class="slider-card__bottom">
+                          <div class="slider-card__bottom-left"><div class="slider-card__arrow slider-card__arrow_left slider-card__arrow_bath" onclick="card_slider(this)"></div></div>
+                          <div class="slider-card__bottom-center">
+                            <div class="slider-card__bottom-title slider-card__bottom-title_bath slider-card__bottom-title_1">Баня </div>
+                            <div class="slider-card__bottom-meter slider-card__bottom-meter_bath-1"> <span class="slider-card__bottom-price slider-card__bottom-price_bath-1"></span></div>
+                          </div>
+                          <div class="slider-card__bottom-right"><div class="slider-card__arrow slider-card__arrow_right slider-card__arrow_bath" onclick="card_slider(this)"></div></div>
+                        </div>
+                      </div>
+                      <div class="slider-card info__card">
+                        <div class="slider-card__top slider-card__top_gazebo">Беседки</div>
+                        <div class="slider-card__photo info__card-photo slider-card__photo_gazebo-1" onclick="zoom_card(this)"><div class="slider-card__photo-mask"></div></div>
+                        <div class="slider-card__bottom">
+                          <div class="slider-card__bottom-left"><div class="slider-card__arrow slider-card__arrow_left slider-card__arrow slider-card__arrow_gazebo" onclick="card_slider(this)"></div></div>
+                          <div class="slider-card__bottom-center">
+                            <div class="slider-card__bottom-title slider-card__bottom-title_gazebo slider-card__bottom-title_1">Беседка </div>
+                            <div class="slider-card__bottom-meter slider-card__bottom-meter_gazebo-1"> <span class="slider-card__bottom-price slider-card__bottom-price_gazebo-1"></span></div>
+                          </div>
+                          <div class="slider-card__bottom-right"><div class="slider-card__arrow slider-card__arrow_right slider-card__arrow slider-card__arrow_gazebo" onclick="card_slider(this)"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info__calculator">
+                    <div class="info__calculator-body">
+                      <div class="info__calculator-title">калькулятор</div>
+                      <div class="info__calculator-subtitle">
+                        <span>Рассчитать</span>
+                        <span>ориентировочную</span>
+                        <span>стоимость</span>
+                      </div>
+                      <div class="info__calculator-form-item">
+                        <label>Тип строения</label>
+                        <select>
+                          <option>Коттедж</option>
+                          <option>Баня</option>
+                          <option>Беседка</option>
+                        </select>
+                      </div>
+                      <div class="info__calculator-form-item">
+                        <label>Материал</label>
+                        <select>
+                          <option>Кирпич</option>
+                          <option>Дерево</option>
+                        </select>
+                      </div>
+                      <div class="info__calculator-form-item">
+                        <label>Площадь объекта, м²</label>
+                        <input value="200">
+                      </div>
+                      <div class="info__calculator-price">Стоимость от: <span class="info__calculator-price-value">2 000 000 р.</span></div>
+                      <div class="info__calculator-button-wrapper"><div class="button info__calculator-button" onclick="ordercall()">Заказать строительство</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button content-block__button" onclick="ordercall()">Получить бесплатную консультацию</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="renovation"></a>
+      <div class="renovation">
+        <div class="block renovation__block">
+          <div class="content-block">
+            <div class="block content-block__wrapper">
+              <div class="container content-block__container">
+                <div class="content-block__title">Ремонт квартир, офисов, магазинов</div>
+                <div class="info">
+                  <div class="info__content">
+                    <ul class="info__list">
+                      <li class="info__list-item">Учитываем тенденции</li>
+                      <li class="info__list-item">Качественные материалы</li>
+                      <li class="info__list-item">Специалисты с опытом от 10 лет</li>
+                      <li class="info__list-item">Профессиональный инструмент</li>
+                      <li class="info__list-item">Фиксированная стоимость работ</li>
+                      <li class="info__list-item">Сдаем проект в срок</li>
+                      <li class="info__list-item">Еженедельная отчетность</li>
+                    </ul>
+                    <div class="info__subtitle">Примеры проектов</div>
+                    <div class="info__cards">
+                      <div class="slider-card info__card">
+                        <div class="slider-card__top slider-card__top_flat">Квартиры</div>
+                        <div class="slider-card__photo info__card-photo slider-card__photo_flat-1" onclick="zoom_card(this)"><div class="slider-card__photo-mask"></div></div>
+                        <div class="slider-card__bottom">
+                          <div class="slider-card__bottom-left"><div class="slider-card__arrow slider-card__arrow_left slider-card__arrow_flat" onclick="card_slider(this)"></div></div>
+                          <div class="slider-card__bottom-center">
+                            <div class="slider-card__bottom-title slider-card__bottom-title_flat slider-card__bottom-title_1">Квартира </div>
+                            <div class="slider-card__bottom-meter slider-card__bottom-meter_flat-1"> <span class="slider-card__bottom-price slider-card__bottom-price_flat-1"></span></div>
+                          </div>
+                          <div class="slider-card__bottom-right"><div class="slider-card__arrow slider-card__arrow_right slider-card__arrow_flat" onclick="card_slider(this)"></div></div>
+                        </div>
+                      </div>
+                      <div class="slider-card info__card">
+                        <div class="slider-card__top slider-card__top_office">Офисы</div>
+                        <div class="slider-card__photo info__card-photo slider-card__photo_office-1" onclick="zoom_card(this)"><div class="slider-card__photo-mask"></div></div>
+                        <div class="slider-card__bottom">
+                          <div class="slider-card__bottom-left"><div class="slider-card__arrow slider-card__arrow_left slider-card__arrow_office" onclick="card_slider(this)"></div></div>
+                          <div class="slider-card__bottom-center">
+                            <div class="slider-card__bottom-title slider-card__bottom-title_office slider-card__bottom-title_1">Офис </div>
+                            <div class="slider-card__bottom-meter slider-card__bottom-meter_office-1"> <span class="slider-card__bottom-price slider-card__bottom-price_office-1"></span></div>
+                          </div>
+                          <div class="slider-card__bottom-right"><div class="slider-card__arrow slider-card__arrow_right slider-card__arrow_office" onclick="card_slider(this)"></div></div>
+                        </div>
+                      </div>
+                      <div class="slider-card info__card">
+                        <div class="slider-card__top slider-card__top_shop">Магазины</div>
+                        <div class="slider-card__photo info__card-photo slider-card__photo_shop-1" onclick="zoom_card(this)"><div class="slider-card__photo-mask"></div></div>
+                        <div class="slider-card__bottom">
+                          <div class="slider-card__bottom-left"><div class="slider-card__arrow slider-card__arrow_left slider-card__arrow_shop" onclick="card_slider(this)"></div></div>
+                          <div class="slider-card__bottom-center">
+                            <div class="slider-card__bottom-title slider-card__bottom-title_shop slider-card__bottom-title_1">Магазин </div>
+                            <div class="slider-card__bottom-meter slider-card__bottom-meter_shop-1"> <span class="slider-card__bottom-price slider-card__bottom-price_shop-1"></span></div>
+                          </div>
+                          <div class="slider-card__bottom-right"><div class="slider-card__arrow slider-card__arrow_right slider-card__arrow_shop" onclick="card_slider(this)"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info__calculator">
+                    <div class="info__calculator-body">
+                      <div class="info__calculator-title">калькулятор</div>
+                      <div class="info__calculator-subtitle">
+                        <span>Рассчитать</span>
+                        <span>ориентировочную</span>
+                        <span>стоимость</span>
+                      </div>
+                      <div class="info__calculator-form-item">
+                        <label>Тип строения</label>
+                        <select>
+                          <option>Квартира</option>
+                          <option>Офис</option>
+                          <option>Магазин</option>
+                        </select>
+                      </div>
+                      <div class="info__calculator-form-item">
+                        <label>Тип ремонта</label>
+                        <select>
+                          <option>Эконом</option>
+                          <option>Стандарт</option>
+                          <option>Элитный</option>
+                        </select>
+                      </div>
+                      <div class="info__calculator-form-item">
+                        <label>Площадь объекта, м²</label>
+                        <input>
+                      </div>
+                      <div class="info__calculator-price">Стоимость от: <span class="info__calculator-price-value">500 000 р.</span></div>
+                      <div class="info__calculator-button-wrapper"><div class="button info__calculator-button" onclick="ordercall()">Заказать строительство</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button content-block__button" onclick="ordercall()">Получить бесплатную консультацию</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="other"></a>
+      <div class="other">
+        <div class="block other__block">
+          <div class="content-block">
+            <div class="block content-block__wrapper other__wrapper">
+              <div class="container content-block__container">
+                <div class="content-block__title">Другие услуги</div>
+                <div class="other__cards">
+                  <div class="other__card other__card-wall" onclick="zoom_card(this)">
+                    <div class="other__card-title">Забор </div>
+                    <div class="other__card-more">Подробнее</div>
+                  </div>
+                  <div class="other__card other__card-plumbing" onclick="zoom_card(this)">
+                    <div class="other__card-title">Сантехника </div>
+                    <div class="other__card-more">Подробнее</div>
+                  </div>
+                </div>
+                <div class="other__cards">
+                  <div class="other__card other__card-land" onclick="zoom_card(this)">
+                    <div class="other__card-title">Ландшафтные работы </div>
+                    <div class="other__card-more">Подробнее</div>
+                  </div>
+                  <div class="other__card other__card-design" onclick="zoom_card(this)">
+                    <div class="other__card-title">Дизайн проект </div>
+                    <div class="other__card-more">Подробнее</div>
+                  </div>
+                </div>
+                <div class="button content-block__button" onclick="ordercall()">Получить бесплатную консультацию</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a name="footer"></a>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__left">
+          <a href="" class="footer__logo">ооо строитель</a>
+          <div class="footer__location">г. Санкт-Петербург</div>
+        </div>
+        <div class="footer__center">
+          <a href="#" class="footer__phone">+7 123 456 78 90</a>
+          <div class="button footer__button" onclick="ordercall()">заказать звонок</div>
+        </div>
+        <div class="footer__right">
+          <a href="#" class="footer__mail">mail@mail.ru</a>
+          <a href="#" class="footer__site">site.com</a>
+        </div>
+      </div>
+    </footer>
+    <div class="mask" onclick="popup_close()"></div>
+    <div class="ordercall">
+      <div class="close"><div class="close-icon" onclick="popup_close()"></div></div>
+      <div class="ordercall__text">
+        <div class="ordercall__title">Оставьте номер</div>
+        <div class="ordercall__subtitle">и мы свяжемся с вами</div>
+      </div>
+      <form action="" method="post">
+        <div class="ordercall__input">
+          <svg class="ordercall__phone-ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513.64 513.64" width="16" height="16" xmlns:v="https://vecta.io/nano"><path d="M499.66 376.96l-71.68-71.68c-25.6-25.6-69.12-15.36-79.36 17.92-7.68 23.04-33.28 35.84-56.32 30.72-51.2-12.8-120.32-79.36-133.12-133.12-7.68-23.04 7.68-48.64 30.72-56.32 33.28-10.24 43.52-53.76 17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12 0L18.38 62.08c-48.64 51.2 5.12 186.88 125.44 307.2s256 176.64 307.2 125.44l48.64-48.64c17.92-20.48 17.92-51.2 0-69.12z" fill="grey"/></svg>
+          <label>Телефон</label><input>
+        </div>
+        <button class="button ordercall__button">Отправить</button>
+      </form>
+    </div>
+    <div class="zoom-card">
+      <div class="zoom-card__body">
+        <div class="close-icon zoom-card__close" onclick="popup_close()"></div>
+        <div class="zoom-card__left">
+          <div class="slider-card zoom-card__card">
+            <div class="slider-card__top zoom-card__card-top"></div>
+            <div class="slider-card__photo zoom-card__card-photo zoom-card__null"></div>
+            <div class="slider-card__bottom">
+              <div class="slider-card__bottom-left"><div class="slider-card__arrow slider-card__arrow_left" onclick="zoom_slider(this)"></div></div>
+              <div class="slider-card__bottom-center">
+                <div class="slider-card__bottom-title zoom-card__card-title zoom-card__null"></div>
+                <div class="slider-card__bottom-meter zoom-card__card-meter zoom-card__null"> <span class="slider-card__bottom-price zoom-card__card-price zoom-card__null"></span></div>
+              </div>
+              <div class="slider-card__bottom-right"><div class="slider-card__arrow slider-card__arrow_right" onclick="zoom_slider(this)"></div></div>
+            </div>
+          </div>
+          <div class="zoom-card__photo-cards">
+            <div class="zoom-card__photo-card zoom-card__null" onclick="zoom_slider(this)"></div>
+            <div class="zoom-card__photo-card zoom-card__null" onclick="zoom_slider(this)"></div>
+            <div class="zoom-card__photo-card zoom-card__null" onclick="zoom_slider(this)"></div>
+            <div class="zoom-card__photo-card zoom-card__null" onclick="zoom_slider(this)"></div>
+            <div class="zoom-card__photo-card zoom-card__null" onclick="zoom_slider(this)"></div>
+          </div>
+        </div>
+        <div class="zoom-card__right">
+          <div class="zoom-card__text">
+            <div class="zoom-card__title zoom-card__null"></div>
+            <div class="zoom-card__subtitle zoom-card__null"></div>
+          </div>
+          <ol class="zoom-card__list zoom-card__list_wall">
+            <li class="zoom-card__list-item">Собственное производство</li>
+            <li class="zoom-card__list-item">Опыт в изготавлении заборов</li>
+            <li class="zoom-card__list-item">Механизмы автоматического открытия</li>
+            <li class="zoom-card__list-item">Работаем профессиональным инструментом</li>
+            <li class="zoom-card__list-item">Стаж специалистов не менее 10 лет</li>
+            <li class="zoom-card__list-item">Новейшие технологии производства</li>
+            <li class="zoom-card__list-item">Большой выбор</li>
+            <li class="zoom-card__list-item">Грамотная консультация наших специалистов</li>
+          </ol>
+          <ol class="zoom-card__list zoom-card__list_plumbing">
+            <li class="zoom-card__list-item">Качественные системы отопления и водоснабжения любой сложности</li>
+            <li class="zoom-card__list-item">Проектирование с учётом всех особенностей жилой площади</li>
+            <li class="zoom-card__list-item">Специалисты с профильным образованием</li>
+            <li class="zoom-card__list-item">Короткие сроки работ</li>
+            <li class="zoom-card__list-item">Фиксированная стоимость</li>
+          </ol>
+          <ol class="zoom-card__list zoom-card__list_land">
+            <li class="zoom-card__list-item">Качественные растения</li>
+            <li class="zoom-card__list-item">Продуманная планировка участка</li>
+            <li class="zoom-card__list-item">Сохранение существующих лесных зон и растений</li>
+            <li class="zoom-card__list-item">Благоустройство естественных зон и водоемов</li>
+          </ol>
+          <ol class="zoom-card__list zoom-card__list_design">
+            <li class="zoom-card__list-item">Дизайнеры со стажем 10 лет</li>
+            <li class="zoom-card__list-item">Соблюдение сроков</li>
+            <li class="zoom-card__list-item">Новейшие тенденции в строительстве и интерьере</li>
+          </ol>
+          <div class="zoom-card__question zoom-card__null"></div>
+          <div class="zoom-card__button-wrapper"><div class="button zoom-card__button" onclick="ordercall()">Хочу</div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+</html>
